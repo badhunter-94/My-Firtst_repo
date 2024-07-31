@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment details</title>
+    <link rel="website icon" type="png" href="./paymentpng.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <div class="head">
+        <h1>
+            PLEASE COMPLETE YOUR PAYMENT 
+        </h1>
+        </div>
+        <p class="req">
+            REQUIRED FIELDS ARE FOLLOWED BY *
+        </p>
+        <h2>
+            USER DETAILS
+        </h2>
+        <p> 
+            Name *
+            <input type="text" placeholder="Enter  your name" pattern="[A-Z,a-z]*" required>
+        </p>
+        <fieldset>
+            <legend>
+                Gender *
+            </legend>
+            <p>
+                <p>
+                     Male <input type="radio" name="gender" id="male"required>
+                </p>
+                <p>
+                    Female <input type="radio" name="gender" id="female"required>
+                </p>
+                <p>
+                    Others <input type="radio" name="gender" id="others"required>
+                </p>
+            </p>
+            
+        </fieldset>
+        <p>
+            Address: *
+            <textarea name="adress" id="adress" cols="30" rows="10" required>
+            </textarea>
+        </p>
+        <p>
+            Email: *
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            Pincode: *
+            <input type="number" name="pincode" id="pincode" required>
+        </p>
+        <p>
+            Mobile nuber: *
+            <input type="number" name="mobile number" id="mobile number" required>
+        </p>
+        <h2>
+            PAYMENT DETAILS 
+        </h2>
+
+        <div class="img">
+        <img src="./cards 1.png" alt="" width="250">
+        </div>
+        <P>
+            Card type: *
+            <select class="ct" name="card_type" id="card_type">
+                <option value="" required>--Select any card--</option>
+                <option value="Visa" required>Visa</option>
+                <option value="Rupay" required>Rupay</option>
+                <option value="Master card" required>Master card</option>
+            </select>
+        </P>
+        <p>
+            Card number: *
+            <input type="number" name="card number" id="card nuber" required>
+        </p>
+        <p>
+            Card holder name: *
+            <input type="text" name="chn" id="chn">
+        </p>
+        <p>
+            Expiry date: *
+            <input type="date" name="ep" id="ep" required>
+        </p>
+        <p>
+            CVV: *
+            <input type="password" name="cvv" id="cvv" required>
+        </p>
+
+        <input type="submit" value="PAY NOW">
+    </form>
+    </div>
+</body>
+</html>
